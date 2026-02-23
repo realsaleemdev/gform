@@ -1,0 +1,174 @@
+\<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forms</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="topbar__left">
+      <button class="icon-btn" aria-label="Menu">
+        <span class="material-icons-outlined">menu</span>
+      </button>
+
+      <div class="brand" aria-label="Forms">
+        <span class="brand__icon" aria-hidden="true">
+          <span class="brand__icon-lines"></span>
+        </span>
+        <span class="brand__text">Forms</span>
+      </div>
+    </div>
+
+    <div class="topbar__center">
+      <div class="search">
+        <span class="material-icons-outlined search__icon">search</span>
+        <input class="search__input" type="text" placeholder="Search" />
+      </div>
+    </div>
+
+    <div class="topbar__right">
+      <button class="icon-btn" aria-label="Apps">
+        <span class="material-icons-outlined">apps</span>
+      </button>
+      <div class="avatar" aria-label="Profile"></div>
+    </div>
+  </header>
+
+
+  <!-- Templates Section -->
+  <section class="templates">
+    <div class="container">
+      <div class="templates__head">
+        <h2 class="section-title">Start a new form</h2>
+
+        <div class="templates__actions">
+          <button class="text-btn" type="button">
+            <span>Template gallery</span>
+            <span class="material-icons-outlined">unfold_more</span>
+          </button>
+          <button class="icon-btn" aria-label="More">
+            <span class="material-icons-outlined">more_vert</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="templates__row" role="list">
+        <a class="tpl" href="#" role="listitem">
+          <div class="tpl__thumb tpl__thumb--blank">
+            <div class="gplus" aria-hidden="true">
+              <span class="gplus__h"></span>
+              <span class="gplus__v"></span>
+            </div>
+          </div>
+          <div class="tpl__label">Blank form</div>
+        </a>
+
+        <a class="tpl" href="#" role="listitem">
+          <div class="tpl__thumb tpl__thumb--green">
+            <div class="mini">
+              <div class="mini__top mini__top--green"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line mini__line--short"></div>
+            </div>
+          </div>
+          <div class="tpl__label">Contact Information</div>
+        </a>
+
+        <a class="tpl" href="#" role="listitem">
+          <div class="tpl__thumb tpl__thumb--photo">
+            <div class="mini">
+              <div class="mini__photo mini__photo--crowd"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line mini__line--short"></div>
+            </div>
+          </div>
+          <div class="tpl__label">RSVP</div>
+        </a>
+
+        <a class="tpl" href="#" role="listitem">
+          <div class="tpl__thumb tpl__thumb--lavender">
+            <div class="mini">
+              <div class="mini__photo mini__photo--balloons"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line mini__line--short"></div>
+            </div>
+          </div>
+          <div class="tpl__label">Party Invite</div>
+        </a>
+
+        <a class="tpl" href="#" role="listitem">
+          <div class="tpl__thumb tpl__thumb--lilac">
+            <div class="mini">
+              <div class="mini__top mini__top--purple"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line mini__line--short"></div>
+            </div>
+          </div>
+          <div class="tpl__label">T-Shirt Sign Up</div>
+        </a>
+
+        <a class="tpl" href="#" role="listitem">
+          <div class="tpl__thumb tpl__thumb--warm">
+            <div class="mini">
+              <div class="mini__photo mini__photo--hall"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line"></div>
+              <div class="mini__line mini__line--short"></div>
+            </div>
+          </div>
+          <div class="tpl__label">Event Registration</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Recent Forms -->
+  <section class="recent">
+    <div class="container">
+      <div class="recent__head">
+        <h2 class="section-title">Recent forms</h2>
+
+        <div class="recent__actions">
+          <button class="text-btn text-btn--muted" type="button">
+            <span>Owned by anyone</span>
+            <span class="material-icons-outlined">expand_more</span>
+          </button>
+
+          <button class="icon-btn" aria-label="List view">
+            <span class="material-icons-outlined">view_list</span>
+          </button>
+          <button class="icon-btn" aria-label="Sort">
+            <span class="material-icons-outlined">sort_by_alpha</span>
+          </button>
+          <button class="icon-btn" aria-label="Folder">
+            <span class="material-icons-outlined">folder_open</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="empty">
+        <div class="empty__box">
+          <div class="empty__title">No forms yet</div>
+          <div class="empty__sub">Select a blank form or choose another template above to get started</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
